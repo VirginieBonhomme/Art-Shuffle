@@ -13,20 +13,22 @@ p {
 #search-button {
   margin-right: 20px;
   background-color: rgb(10, 18, 227);
+
+}
+
+button {
+  padding: 10px 10px 10px 10px;
   color:ghostwhite;
   font-family: sans-serif;
   font-size: 16px;
     letter-spacing: 2px;
-    padding: 10px 10px 10px 10px;
+    border-radius: 12px
 }
+
 
 #random-button {
   background-color: rgb(242, 45, 45);
-  color: ghostwhite;
-  font-family: sans-serif;
-  font-size: 16px;
-    letter-spacing: 2px;
-    padding: 10px 10px 10px 10px;
+    
 }
 
 .search-form {
@@ -39,10 +41,10 @@ p {
 }
 .search-input {
   font-size: 16px;
-  text-align: center;
   margin-right: 20px;
   height: 40px;
      width: 200px;
+     border-radius: 12px
 }
 
 body {
