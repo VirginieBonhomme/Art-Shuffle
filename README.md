@@ -47,8 +47,9 @@ https://api.artic.edu/api/v1/artworks?limit=2
 ```
 
 ## Wireframes
- artshufflewireframe.png
- artshuffle/images/artshufflewireframefin.png/
+![Wireframe](/images/artshufflewireframe.png)
+![Hifi wireframe](/images/artshufflewireframefin.png/)
+ 
 
 #### MVP 
 
@@ -76,8 +77,8 @@ https://api.artic.edu/api/v1/artworks?limit=2
 |Dec 17| Presentations | Incomplete
 
 ## Priority Matrix
+![Time Matrix](/images/artshufflewireMatrix.png)
 
-artshuffle/images/artshufflewireMatrix.png/
 
 ## Timeframes
 Personally I believe it will take me about 40 to 50 hours 
