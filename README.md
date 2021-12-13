@@ -47,7 +47,7 @@ https://api.artic.edu/api/v1/artworks?limit=2
 ```
 
 ## Wireframes
-![Wireframe](images/artshufflewireframe.png)
+![Wireframe](images/Artshufflewireframe.png)
 
 ![Hifi wireframe](images/ArtShuffleWirefameFin.png)
  
@@ -87,18 +87,18 @@ Personally I believe it will take me about 40 to 50 hours
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | INFRASTRUCTURE: | -| -| - | - |
-| core Html, CSS, | H | 4hrs| 4hrs| - |
-| JavaScript | H | 4hrs| 4hrs| - |
+| core Html, CSS, | H | 4hrs| - | - |
+| JavaScript | H | 4hrs| - | - |
 | DATA| - | -| - | - |
-| Access API | H | 4hrs| 4hrs| - |
+| Access API | H | 4hrs| - | - |
 | DOM Manipulation | H | 4hrs| - | - |
 | DESIGN| - | -| - | - |
-| Responsive | H | 4hrs| 4hrs| - |
+| Responsive | H | 4hrs| - | - |
 | FUNCTIONS | -| -| - | - |
-| Search Form Function| H | 4hrs| 4hrs - |
-| Search Button Function | H | 4hrs| 4hrs| - |
-| Random Button Function | H | 4hrs| 4hrs| - |
-| Refresh Load Page| H | 4hrs| 4hrs| - |
+| Search Form Function| H | 4hrs| - |
+| Search Button Function | H | 4hrs| - | - |
+| Random Button Function | H | 4hrs| - | - |
+| Refresh Load Page| H | 4hrs| - | - |
 | Total | H | 36hrs| 36hrs| - |
 
 
