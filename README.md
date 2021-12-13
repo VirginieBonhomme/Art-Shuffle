@@ -48,6 +48,7 @@ https://api.artic.edu/api/v1/artworks?limit=2
 
 ## Wireframes
 ![Wireframe](images/artshufflewireframe.png)
+
 ![Hifi wireframe](images/ArtShuffleWirefameFin.png)
  
 
