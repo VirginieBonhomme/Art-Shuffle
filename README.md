@@ -47,8 +47,8 @@ https://api.artic.edu/api/v1/artworks?limit=2
 ```
 
 ## Wireframes
-![Wireframe](/images/artshufflewireframe.png)
-![Hifi wireframe](/images/artshufflewireframefin.png/)
+![Wireframe](images/artshufflewireframe.png)
+![Hifi wireframe](images/ArtShuffleWirefameFin.png)
  
 
 #### MVP 
@@ -77,7 +77,7 @@ https://api.artic.edu/api/v1/artworks?limit=2
 |Dec 17| Presentations | Incomplete
 
 ## Priority Matrix
-![Time Matrix](/images/artshufflewireMatrix.png)
+![Time Matrix](images/ArtShuffleMatrix.png)
 
 
 ## Timeframes
