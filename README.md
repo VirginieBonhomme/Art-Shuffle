@@ -16,7 +16,7 @@ Art Institute of Chicago API
 https://api.artic.edu/api/v1/artworks?limit=2
 
 
-data": [
+``` data": [
 {
 "id": 8969,
 "api_model": "artworks",
