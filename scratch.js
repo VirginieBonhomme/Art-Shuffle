@@ -8,31 +8,34 @@ const origin = document.querySelector(".origin");
 const date = document.querySelector(".display-date");
 const medium = document.querySelector(".medium");
 const dime = document.querySelector(".dimensions");
+const imageTag = document.querySelector(".imageTag")
 
 
 
 async function fetchartData(text) {
   const url = "https://api.artic.edu/api/v1/artworks";
   let currentPage = "";
-  // try {
+
   let BASE_URL = `${url}/search?q=${text}`;
   let res = await axios.get(BASE_URL);
   let data = res.data;
   console.log(data.data);
   let res2 = await axios.get(data.data[0].api_link)
-  artistName.textContent = res2.data.data.artist_title
-  artWorkTitle.textContent = res2.data.data.title
-  displayImage.textContent = res2.data.data.thumbnail
-  origin.textContent = res2.data.data.place_of_origin
-  date.textContent = res2.data.data.date_display
-  medium.textContent = res2.data.medium_display
-  dime.textContent = res2.data.data.dimensions
+  let imageUrl = `${url}/search?q=${text}/${identifier}/full/843,/0/default.jpg`;
+  let res3 = await axios.get(imageUrl);
+  let image = res3.data;
 
-  randomButton.addEventListener('click', randomSelection);
-  function randomSelection() {
-    let random = Math.floor(Math.random() * data.data[0].api_link.length);
-    fetchartData(random)
-  }
+
+
+  artistName.textContent = res2.data.data.artist_title;
+  artWorkTitle.textContent = res2.data.data.title;
+  imageTag.textContent = imageUrl;
+  origin.textContent = res2.data.data.place_of_origin;
+  date.textContent = res2.data.data.date_display;
+  medium.textContent = res2.data.data.medium_display;
+  dime.textContent = res2.data.data.dimensions;
+
+  // 
   // console.log(res2.data.data.artist_title);
   // data.data.forEach(work => {
   //   const 
@@ -47,7 +50,17 @@ async function fetchartData(text) {
   // };
 };
 
+// randomButton.addEventListener('click', randomSelection);
+// async function randomSelection() {
+//   const url = "https://api.artic.edu/api/v1/artworks";
 
+
+//   let BASE_URL = `${url}/search?q=${click}`;
+//   let res = await axios.get(BASE_URL);
+//   let data = res.data;
+//   let random = Math.floor(Math.random() * data.data.length);
+//   fetchartData()
+// }
 // async function displayArtWork() {
 
 // };
