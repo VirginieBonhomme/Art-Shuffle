@@ -74,3 +74,21 @@ flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
+
+.info {
+  position: absolute;
+  right: 100;
+  right: 100px;
+}
+
+.imageTag {
+  width: 600px;
+  height: 600px;
+  position: relative;
+    right: 200px
+}
+
+.artist-name {
+  position: relative;
+    right: 200px;
+}

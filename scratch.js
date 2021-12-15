@@ -21,86 +21,31 @@ async function fetchartData(text) {
   let data = res.data;
   console.log(data.data);
   let res2 = await axios.get(data.data[0].api_link)
-  let imageUrl = `${url}/search?q=${text}/${identifier}/full/843,/0/default.jpg`;
-  let res3 = await axios.get(imageUrl);
-  let image = res3.data;
-
+  let imageUrl = `${res2.data.config.iiif_url}/${res2.data.data.image_id}/full/843,/0/default.jpg`;
 
 
   artistName.textContent = res2.data.data.artist_title;
   artWorkTitle.textContent = res2.data.data.title;
-  imageTag.textContent = imageUrl;
+  imageTag.src = imageUrl
   origin.textContent = res2.data.data.place_of_origin;
   date.textContent = res2.data.data.date_display;
   medium.textContent = res2.data.data.medium_display;
   dime.textContent = res2.data.data.dimensions;
+
+  randomButton.addEventListener('click', randomSelection);
+  function randomSelection() {
+
+    let random = Math.floor(Math.random() * data.data[2].api_link.length);
+    fetchartData(random)
+  }
 
   // 
   // console.log(res2.data.data.artist_title);
   // data.data.forEach(work => {
   //   const 
   // })
-  // for (i = 0; i < data.data.length; i++) {
-  //   let nextPage = data["pagination"].next_url;
-  // let BASE_URL = nextPage
-  // console.log(nextPage);
-  // if (data.data.artist_title === )
-  // };
 
-  // };
 };
-
-// randomButton.addEventListener('click', randomSelection);
-// async function randomSelection() {
-//   const url = "https://api.artic.edu/api/v1/artworks";
-
-
-//   let BASE_URL = `${url}/search?q=${click}`;
-//   let res = await axios.get(BASE_URL);
-//   let data = res.data;
-//   let random = Math.floor(Math.random() * data.data.length);
-//   fetchartData()
-// }
-// async function displayArtWork() {
-
-// };
-// displayArtWork();
-
-// async function displayArtistName() {
-
-// };
-// displayArtisName();
-
-// async function displayWorkTitle() {
-
-// };
-// displayWorkTitle();
-
-// async function displayOrigin() {
-
-// };
-// displayOrigin();
-
-// async function displayDate() {
-
-// };
-// displayDate();
-
-// async function displayMedium() {
-
-// };
-// displayMedium();
-
-// async function displayDime() {
-
-// };
-// displayDime();
-
-
-// function remove() {
-
-// };
-// remove();
 
 
 
