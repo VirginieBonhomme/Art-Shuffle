@@ -33,12 +33,12 @@ async function fetchartData(text) {
   medium.textContent = res2.data.data.medium_display;
   dime.textContent = res2.data.data.dimensions;
 
-  randomButton.addEventListener('click', randomSelection);
-  function randomSelection() {
+  // randomButton.addEventListener('click', randomSelection);
+  // function randomSelection() {
 
-    let random = Math.floor(Math.random() * data.data[0].api_link.length);
-    fetchartData(random)
-  }
+  //   let random = Math.floor(Math.random() * data.data[0].api_link.length);
+  //   fetchartData(random)
+  // }
 
 
 
