@@ -70,11 +70,11 @@ https://api.artic.edu/api/v1/artworks?limit=2
 |  Day | Deliverable | Status
 |---|---| ---|
 |Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | complete
-|Dec 13| Project Approval | Incomplete
-|Dec 13| Core Application Structure (HTML, CSS,) | Incomplete
-|Dec 14| Pseudocode / actual code | Incomplete
-|Dec 15| Initial Clickable Model  | Incomplete
-|Dec 16| MVP | Incomplete
+|Dec 13| Project Approval | complete
+|Dec 13| Core Application Structure (HTML, CSS,) | complete
+|Dec 14| Pseudocode / actual code | complete
+|Dec 15| Initial Clickable Model  | complete
+|Dec 16| MVP | complete
 |Dec 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -87,30 +87,64 @@ Personally I believe it will take me about 40 to 50 hours
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | INFRASTRUCTURE: | -| -| - | - |
-| core Html, CSS, | H | 4hrs| - | - |
-| JavaScript | H | 4hrs| - | - |
+| core Html, CSS, | H | 4hrs| 4hrs | 4hrs |
+| JavaScript | H | 4hrs| 5hrs | 7hrs |
 | DATA| - | -| - | - |
-| Access API | H | 4hrs| - | - |
-| DOM Manipulation | H | 4hrs| - | - |
+| Access API | H | 4hrs| 4hrs | 4hrs |
+| DOM Manipulation | H | 4hrs| 4hrs | 4hrs |
 | DESIGN| - | -| - | - |
-| Responsive | H | 4hrs| - | - |
+| Responsive | H | 4hrs| 4hrs | 3hrs |
 | FUNCTIONS | -| -| - | - |
-| Search Form Function| H | 4hrs| - |
-| Search Button Function | H | 4hrs| - | - |
-| Random Button Function | H | 4hrs| - | - |
-| Refresh Load Page| H | 4hrs| - | - |
-| Total | H | 36hrs| 36hrs| - |
+| Search Form Function| H | 4hrs| 4hrs |
+| Search Button Function | H | 4hrs| 4hrs | 4hrs |
+| Random Button Function | H | 4hrs| 4hrs | 4hrs |
+| Total | H | 36hrs| 37hrs| 35hrs |
 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+This code snippet is from my CSS, for my search form. I am proud that I was able to make it look similar to my wire frame and was also able to add a hover button.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.search-form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#search-button {
+  margin-right: 20px;
+  background-color: rgb(10, 18, 227);
+
+}
+#search-button:hover {
+  background-color: yellow;
+  color : black
+}
+
+#random-button:hover {
+  background-color: yellow;
+  color : black
+}
+
+button {
+  padding: 10px 10px 10px 10px;
+  color:ghostwhite;
+  font-family: sans-serif;
+  font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 12px
+}
+
+
+#random-button {
+  background-color: rgb(242, 45, 45);
+    
 }
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ I dont have any changes but my random button needs to be fixed in posted mvp. At the moment it gets random artist but after a few clicks it glitches.

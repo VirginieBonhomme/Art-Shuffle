@@ -21,6 +21,7 @@ async function fetchartData(text) {
   let data = res.data;
   console.log(data.data);
   let res2 = await axios.get(data.data[0].api_link)
+  console.log(res2)
   let imageUrl = `${res2.data.config.iiif_url}/${res2.data.data.image_id}/full/843,/0/default.jpg`;
 
 
@@ -35,15 +36,11 @@ async function fetchartData(text) {
   randomButton.addEventListener('click', randomSelection);
   function randomSelection() {
 
-    let random = Math.floor(Math.random() * data.data[2].api_link.length);
+    let random = Math.floor(Math.random() * data.data[0].api_link.length);
     fetchartData(random)
   }
 
-  // 
-  // console.log(res2.data.data.artist_title);
-  // data.data.forEach(work => {
-  //   const 
-  // })
+
 
 };
 
@@ -55,14 +52,4 @@ function updateValue() {
   fetchartData(text)
 }
 
-// searchButton.addEventListener('searchButton', click);
-// function updateValue() {
 
-//   console.log();
-// }
-
-// randomButton.addEventListener('click', randomSelection);
-// function randomSelection() {
-//   let random = Math.floor(Math.random() * data.data.length);
-//   fetchartData(random)
-// }
