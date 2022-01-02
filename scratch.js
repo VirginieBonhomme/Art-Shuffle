@@ -11,45 +11,43 @@ const dime = document.querySelector(".dimensions");
 const imageTag = document.querySelector(".imageTag")
 
 
+let artData
+let imageUrl
 
 async function fetchartData(text) {
+
   const url = "https://api.artic.edu/api/v1/artworks";
-  let currentPage = "";
 
   let BASE_URL = `${url}/search?q=${text}`;
   let res = await axios.get(BASE_URL);
   let data = res.data;
   console.log(data.data);
-  let res2 = await axios.get(data.data[0].api_link)
-  console.log(res2)
-  let imageUrl = `${res2.data.config.iiif_url}/${res2.data.data.image_id}/full/843,/0/default.jpg`;
+  artData = await axios.get(data.data[Math.floor(Math.random() * data.data.length)].api_link);
+  console.log(artData)
+  imageUrl = `${artData.data.config.iiif_url}/${artData.data.data.image_id}/full/843,/0/default.jpg`;
 
-
-  artistName.textContent = res2.data.data.artist_title;
-  artWorkTitle.textContent = res2.data.data.title;
-  imageTag.src = imageUrl
-  origin.textContent = res2.data.data.place_of_origin;
-  date.textContent = res2.data.data.date_display;
-  medium.textContent = res2.data.data.medium_display;
-  dime.textContent = res2.data.data.dimensions;
-
-  // randomButton.addEventListener('click', randomSelection);
-  // function randomSelection() {
-
-  //   let random = Math.floor(Math.random() * data.data[0].api_link.length);
-  //   fetchartData(random)
-  // }
-
-
-
+  renderArt();
 };
 
+function renderArt() {
 
+  artistName.textContent = "Artist Name: " + artData.data.data.artist_title;
+  artWorkTitle.textContent = "Title: " + artData.data.data.title;
+  imageTag.src = imageUrl
+  origin.textContent = "Origin: " + artData.data.data.place_of_origin;
+  date.textContent = "Display Date: " + artData.data.data.date_display;
+  medium.textContent = "Medium: " + artData.data.data.medium_display;
+  dime.textContent = "Dim: " + artData.data.data.dimensions;
+}
 
-searchButton.addEventListener('click', updateValue);
 function updateValue() {
   let text = input.value;
   fetchartData(text)
 }
 
+function randomSelection() {
+  fetchartData(artData)
+}
 
+searchButton.addEventListener('click', updateValue);
+randomButton.addEventListener('click', randomSelection);

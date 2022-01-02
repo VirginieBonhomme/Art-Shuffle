@@ -82,7 +82,7 @@ https://api.artic.edu/api/v1/artworks?limit=2
 
 
 ## Timeframes
-Personally I believe it will take me about 40 to 50 hours 
+ 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -147,4 +147,3 @@ button {
 ```
 
 ## Change Log
- I dont have any changes but my random button needs to be fixed in posted mvp. At the moment it gets random artist but after a few clicks it glitches.
