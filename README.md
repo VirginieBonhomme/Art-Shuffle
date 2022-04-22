@@ -1,5 +1,7 @@
 # Art Shuffle
 
+[Live Demo Link](https://virginiebonhomme.github.io/Art-Shuffle/)
+
 # Project Overview
 
 ## Project Name
